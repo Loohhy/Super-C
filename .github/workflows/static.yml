@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Queridos Consumidores</title>
+  <style>
+    body {
+      font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+      background-color: #d7ccc8;
+      color: #4e342e;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #a1887f;
+    }
+    .mascote {
+      max-width: 150px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #a1887f;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #6d4c41;
+    }
+    p {
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo ao Super CDC! 📦</h1>
+  <img src="super-cdc.png" alt="Super CDC" class="mascote" />
+  <p>Fale com o nosso chatbot clicando no ícone no canto inferior direito.</p>
+
+  <footer>
+    © 2025 Queridos Consumidores | Desenvolvido com ❤️ por Loohhy
+  </footer>
+
+  <script type="text/javascript">
+    (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6828ba4112a16689134e712e' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          locale: 'pt-BR',
+          voice: {
+            languageCode: 'pt-BR',
+            url: 'https://runtime-api.voiceflow.com'
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
+      v.type = "text/javascript"; 
+      s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>
+
